@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title> Draw Hangman</title>
+
+</head>
+
+<body>
+
+	<h1>Líneas en Canvas usando JavaScript</h1>
+	<a href="//parzibyte.me/blog">By Parzibyte</a>
+	<br>
+		<canvas id="canvas"></canvas>
+
+
+    <script>
+const ALTURA_CANVAS = 200,
+	ANCHURA_CANVAS = 400;
+
+// Obtener el elemento del DOM
+const canvas = document.querySelector("#canvas");
+canvas.width = ANCHURA_CANVAS;
+canvas.height = ALTURA_CANVAS;
+// Del canvas, obtener el contexto para poder dibujar
+const contexto = canvas.getContext("2d");
+// Comenzar
+contexto.beginPath();
+// Grosor de línea
+contexto.lineWidth = 3;
+// Color de línea 
+contexto.strokeStyle = "blue";
+// Comenzamos en 0, 0
+contexto.moveTo(0, 0);
+// Hacemos una línea hasta 48, 48
+contexto.lineTo(48, 48);
+contexto.stroke(); // "Guardar" cambios
+
+
+// Otra línea
+contexto.beginPath();
+contexto.strokeStyle = "red";
+contexto.moveTo(100, 0);
+contexto.lineTo(52, 48);
+contexto.stroke();
+
+
+// Otra línea
+contexto.beginPath();
+contexto.strokeStyle = "yellow";
+contexto.moveTo(0, 100);
+contexto.lineTo(88, );
+contexto.stroke();
+
+
+// Otra línea
+contexto.beginPath();
+contexto.strokeStyle = "green";
+contexto.moveTo(100, 100);
+contexto.lineTo(52, 52);
+contexto.stroke();
+</script>
+
+
+</body>
+
+
+</html>
